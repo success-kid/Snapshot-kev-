@@ -1,0 +1,21 @@
+{
+  "name": "node.js-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.920.0",
+    "axios": "^0.21.1",
+    "csv-parse": "^4.15.4",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^10.0.0",
+    "got": "^11.8.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
