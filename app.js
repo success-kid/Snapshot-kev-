@@ -31,7 +31,7 @@ async function getScreenshots() {
             `https://shot.screenshotapi.net/screenshot`,
             {
               token: SSAPI,
-              url: singleRecord.domain,
+              url: singleRecord.Websites,
               width: 3360,
               height: 1890,
               delay: 2500,
@@ -51,7 +51,7 @@ async function getScreenshots() {
 
 
           // write screenshot to snapshot directory
-          await fsPromises.writeFile(`snapshot/${singleRecord.domain}.png`, screenshotData.data, function (err, data) {
+          await fsPromises.writeFile(`snapshot/${singleRecord.Websites}.png`, screenshotData.data, function (err, data) {
               if (err) console.log("error", err); 
             }
           );
@@ -60,8 +60,8 @@ async function getScreenshots() {
 
 
         } catch (err) {
-          console.log(singleRecord.domain, err);
-          errors.push(singleRecord.domain);
+          console.log(singleRecord.Websites, err);
+          errors.push(singleRecord.Websites);
 
 
         }
